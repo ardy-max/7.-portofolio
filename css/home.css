@@ -170,6 +170,24 @@
     letter-spacing: 0.1em;
 }
 
+/* Foto Profil Asli */
+.profile-img {
+    position: absolute;
+    inset: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    object-fit: cover;
+    object-position: center top;
+    border-radius: calc(var(--border-radius-lg) - 4px);
+    z-index: 2;
+    border: 2px solid rgba(99, 102, 241, 0.3);
+    transition: transform var(--transition-base);
+}
+
+.profile-img:hover {
+    transform: scale(1.03);
+}
+
 /* ==========================================================================
    HERO RESPONSIVE
    ========================================================================== */
