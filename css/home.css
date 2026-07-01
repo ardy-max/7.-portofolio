@@ -86,9 +86,11 @@
     box-shadow: 0 4px 12px var(--glow-color-2);
 }
 
-.social-icon svg {
-    width: 18px;
-    height: 18px;
+.social-icon svg,
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 /* Hero Visual / Profile Placeholder */
