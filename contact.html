@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya | Hubungi Saya</title>
+    
+    <!-- Google Fonts: Outfit (Header) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Global & Page-Specific CSS -->
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Background Glow Elements (Aesthetic) -->
+        <div class="glow-bg glow-1"></div>
+        <div class="glow-bg glow-2"></div>
+
+        <!-- Navigation Header -->
+        <header class="header">
+            <div class="container navbar">
+                <a href="index.html" class="logo">
+                    <span>Nama</span>Anda.
+                </a>
+                
+                <nav class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Beranda</a></li>
+                        <li><a href="about.html" class="nav-link">Tentang</a></li>
+                        <li><a href="projects.html" class="nav-link">Proyek</a></li>
+                        <li><a href="contact.html" class="nav-link active">Kontak</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-secondary nav-btn">Hubungi Saya</a>
+                    <!-- Mobile Toggle Button -->
+                    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Contact Section -->
+            <section class="contact-section section-padding scroll-reveal">
+                <div class="container contact-container">
+                    <div class="section-header">
+                        <span class="section-subtitle">Hubungi Saya</span>
+                        <h2 class="section-title">Mari Mulai Sesuatu yang Baru</h2>
+                        <div class="section-divider"></div>
+                    </div>
+
+                    <div style="text-align: center; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        <p style="color: var(--text-secondary); font-size: 1.1rem;">
+                            Ada proyek menarik yang ingin diwujudkan atau ada tawaran kerjasama? Silakan hubungi saya melalui kontak di bawah ini. Saya akan merespons secepat mungkin.
+                        </p>
+                    </div>
+
+                    <!-- Centered Contact Cards Grid (Without form) -->
+                    <div class="contact-cards-grid">
+                        <!-- Email Card -->
+                        <div class="contact-card-item">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Kirim Email</span>
+                                <a href="mailto:emailanda@domain.com">emailanda@domain.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="contact-card-item">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Hubungi Telepon</span>
+                                <a href="tel:+6281234567890">+62 812 3456 7890</a>
+                            </div>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="contact-card-item">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Lokasi</span>
+                                <p>Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-content">
+                <p class="copyright">&copy; 2026 Nama Anda. Hak Cipta Dilindungi.</p>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="about.html">Tentang</a>
+                    <a href="projects.html">Proyek</a>
+                    <a href="contact.html">Kontak</a>
+                </div>
+                <!-- Back to top button -->
+                <button id="back-to-top" class="back-to-top" aria-label="Kembali ke atas">
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

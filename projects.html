@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya | Proyek</title>
+    
+    <!-- Google Fonts: Outfit (Header) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Global & Page-Specific CSS -->
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Background Glow Elements (Aesthetic) -->
+        <div class="glow-bg glow-1"></div>
+        <div class="glow-bg glow-2"></div>
+
+        <!-- Navigation Header -->
+        <header class="header">
+            <div class="container navbar">
+                <a href="index.html" class="logo">
+                    <span>Nama</span>Anda.
+                </a>
+                
+                <nav class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Beranda</a></li>
+                        <li><a href="about.html" class="nav-link">Tentang</a></li>
+                        <li><a href="projects.html" class="nav-link active">Proyek</a></li>
+                        <li><a href="contact.html" class="nav-link">Kontak</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-secondary nav-btn">Hubungi Saya</a>
+                    <!-- Mobile Toggle Button -->
+                    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Projects Section -->
+            <section class="projects-section section-padding scroll-reveal">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-subtitle">Karya Saya</span>
+                        <h2 class="section-title">Proyek Pilihan Terbaru</h2>
+                        <div class="section-divider"></div>
+                    </div>
+
+                    <!-- Project Grid -->
+                    <div class="grid projects-grid">
+                        <!-- Project Card 1 -->
+                        <div class="project-card" data-category="frontend">
+                            <div class="project-image-container">
+                                <!-- Ganti dengan screenshot proyek Anda -->
+                                <div class="project-placeholder-image proj-gradient-1">
+                                    <i data-lucide="monitor" class="proj-icon"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link-btn" aria-label="Demo Langsung" target="_blank"><i data-lucide="external-link"></i></a>
+                                        <a href="#" class="project-link-btn" aria-label="Repositori Kode" target="_blank"><i data-lucide="github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-tag">Frontend / React</span>
+                                <h3 class="project-card-title">E-Commerce Modern Dashboard</h3>
+                                <p class="project-card-description">
+                                    Dashboard interaktif untuk melacak penjualan, manajemen produk, dan visualisasi data performa toko online secara real-time.
+                                </p>
+                                <div class="project-tech-stack">
+                                    <span>React</span>
+                                    <span>CSS Modules</span>
+                                    <span>ChartJS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="project-card" data-category="backend">
+                            <div class="project-image-container">
+                                <div class="project-placeholder-image proj-gradient-2">
+                                    <i data-lucide="database" class="proj-icon"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link-btn" aria-label="Demo Langsung" target="_blank"><i data-lucide="external-link"></i></a>
+                                        <a href="#" class="project-link-btn" aria-label="Repositori Kode" target="_blank"><i data-lucide="github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-tag">Backend / Node.js</span>
+                                <h3 class="project-card-title">Task Management API</h3>
+                                <p class="project-card-description">
+                                    RESTful API kokoh untuk aplikasi manajemen tugas. Dilengkapi sistem autentikasi JWT, validasi data, dan integrasi database PostgreSQL.
+                                </p>
+                                <div class="project-tech-stack">
+                                    <span>Express</span>
+                                    <span>PostgreSQL</span>
+                                    <span>JWT</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="project-card" data-category="design">
+                            <div class="project-image-container">
+                                <div class="project-placeholder-image proj-gradient-3">
+                                    <i data-lucide="figma" class="proj-icon"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link-btn" aria-label="Desain Figma" target="_blank"><i data-lucide="external-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-tag">Desain UI/UX</span>
+                                <h3 class="project-card-title">Travel Mobile Application</h3>
+                                <p class="project-card-description">
+                                    Desain antarmuka aplikasi seluler untuk memesan tiket perjalanan dan mencari pemandu wisata lokal. Didesain dengan prinsip berpusat pada pengguna.
+                                </p>
+                                <div class="project-tech-stack">
+                                    <span>Figma</span>
+                                    <span>Wireframing</span>
+                                    <span>Prototype</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 4 -->
+                        <div class="project-card" data-category="frontend">
+                            <div class="project-image-container">
+                                <div class="project-placeholder-image proj-gradient-4">
+                                    <i data-lucide="globe" class="proj-icon"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link-btn" aria-label="Demo Langsung" target="_blank"><i data-lucide="external-link"></i></a>
+                                        <a href="#" class="project-link-btn" aria-label="Repositori Kode" target="_blank"><i data-lucide="github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-tag">Frontend / HTML</span>
+                                <h3 class="project-card-title">Landing Page SaaS Premium</h3>
+                                <p class="project-card-description">
+                                    Halaman arahan (landing page) berkinerja tinggi dan dioptimalkan secara SEO untuk startup SaaS. Dibangun dengan HTML, CSS, dan JS murni.
+                                </p>
+                                <div class="project-tech-stack">
+                                    <span>HTML5</span>
+                                    <span>Vanilla CSS</span>
+                                    <span>Intersection Observer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-content">
+                <p class="copyright">&copy; 2026 Nama Anda. Hak Cipta Dilindungi.</p>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="about.html">Tentang</a>
+                    <a href="projects.html">Proyek</a>
+                    <a href="contact.html">Kontak</a>
+                </div>
+                <!-- Back to top button -->
+                <button id="back-to-top" class="back-to-top" aria-label="Kembali ke atas">
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
