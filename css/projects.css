@@ -1,0 +1,143 @@
+/* ==========================================================================
+   PROJECTS PAGE (projects.html) — GRID & CARD STYLES
+   ========================================================================== */
+
+/* Projects Grid — Centered by default, limits card max-width */
+.projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
+    justify-content: center;
+}
+
+/* Project Card */
+.project-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    transition: all var(--transition-normal);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-hover);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Image Area */
+.project-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Gradient placeholder visuals */
+.project-placeholder-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.proj-gradient-1 { background: linear-gradient(135deg, #1e1b4b, #311042); }
+.proj-gradient-2 { background: linear-gradient(135deg, #09333f, #111827); }
+.proj-gradient-3 { background: linear-gradient(135deg, #4c0519, #2d0630); }
+.proj-gradient-4 { background: linear-gradient(135deg, #064e3b, #0f172a); }
+
+.proj-icon {
+    width: 48px;
+    height: 48px;
+    color: rgba(255, 255, 255, 0.4);
+    transition: transform var(--transition-normal);
+}
+
+.project-card:hover .proj-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Hover overlay with links */
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(9, 9, 11, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.project-image-container:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--text-primary);
+    color: var(--bg-dark);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform var(--transition-fast);
+}
+
+.project-link-btn:hover {
+    transform: scale(1.1);
+}
+
+.project-link-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Card Content Area */
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-1);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-card-title {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.project-card-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Tech Stack Badge Chips */
+.project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tech-stack span {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 0.25rem 0.6rem;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}

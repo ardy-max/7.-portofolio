@@ -1,0 +1,109 @@
+/* ==========================================================================
+   ABOUT PAGE (about.html) — BIO & SKILLS STYLES
+   ========================================================================== */
+
+/* About Grid Layout */
+.about-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 4rem;
+}
+
+.about-info h3, .about-skills h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-info p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* Personal Details Grid (Lokasi, Email, dll.) */
+.personal-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.detail-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+.detail-value {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Skills Section */
+.skills-intro {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.skills-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skill-category h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.skill-tag:hover {
+    color: var(--text-primary);
+    border-color: var(--accent-1);
+    background-color: rgba(99, 102, 241, 0.05);
+    transform: translateY(-2px);
+}
+
+.skill-tag svg {
+    width: 16px;
+    height: 16px;
+    color: var(--accent-2);
+}
+
+/* ==========================================================================
+   ABOUT RESPONSIVE
+   ========================================================================== */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}

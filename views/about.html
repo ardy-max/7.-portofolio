@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya | Tentang Saya</title>
+    
+    <!-- Google Fonts: Outfit (Header) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Global & Page-Specific CSS -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Background Glow Elements (Aesthetic) -->
+        <div class="glow-bg glow-1"></div>
+        <div class="glow-bg glow-2"></div>
+
+        <!-- Navigation Header -->
+        <header class="header">
+            <div class="container navbar">
+                <a href="../index.html" class="logo">
+                    <span>Nama</span>Anda.
+                </a>
+                
+                <nav class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Beranda</a></li>
+                        <li><a href="about.html" class="nav-link active">Tentang</a></li>
+                        <li><a href="projects.html" class="nav-link">Proyek</a></li>
+                        <li><a href="contact.html" class="nav-link">Kontak</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-secondary nav-btn">Hubungi Saya</a>
+                    <!-- Mobile Toggle Button -->
+                    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- About Section -->
+            <section class="about-section section-padding scroll-reveal">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-subtitle">Tentang Saya</span>
+                        <h2 class="section-title">Mari Berkenalan Lebih Dekat</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    
+                    <div class="grid about-grid">
+                        <div class="about-info">
+                            <h3>Siapa Saya Sebenarnya?</h3>
+                            <p>
+                                Paragraf ini adalah tempat untuk menceritakan latar belakang Anda. Ceritakan tentang perjalanan karir Anda, apa yang memotivasi Anda, dan nilai-nilai yang Anda pegang dalam bekerja. Anda bisa menuliskan pencapaian terbesar Anda atau keunikan cara Anda bekerja.
+                            </p>
+                            <p>
+                                Saya percaya bahwa desain yang baik bukan hanya tentang tampilan yang indah, tetapi tentang bagaimana pengguna dapat berinteraksi dengan mudah dan nyaman demi mencapai tujuan mereka.
+                            </p>
+                            
+                            <div class="personal-details-grid">
+                                <div class="detail-item">
+                                    <span class="detail-label">Lokasi:</span>
+                                    <span class="detail-value">Jakarta, Indonesia</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Email:</span>
+                                    <span class="detail-value">emailanda@domain.com</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Pendidikan:</span>
+                                    <span class="detail-value">S1 Teknik Informatika</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Bahasa:</span>
+                                    <span class="detail-value">Indonesia, Inggris</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-skills">
+                            <h3>Keahlian & Teknologi</h3>
+                            <p class="skills-intro">Berikut adalah teknologi dan alat yang biasa saya gunakan untuk mewujudkan ide-ide luar biasa:</p>
+                            
+                            <div class="skills-categories">
+                                <!-- Skill Category 1 -->
+                                <div class="skill-category">
+                                    <h4>Frontend</h4>
+                                    <div class="skills-list">
+                                        <div class="skill-tag"><i data-lucide="code-2"></i> HTML5</div>
+                                        <div class="skill-tag"><i data-lucide="palette"></i> CSS3</div>
+                                        <div class="skill-tag"><i data-lucide="braces"></i> JavaScript</div>
+                                        <div class="skill-tag"><i data-lucide="layers"></i> React / Next.js</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Skill Category 2 -->
+                                <div class="skill-category">
+                                    <h4>Backend & Database</h4>
+                                    <div class="skills-list">
+                                        <div class="skill-tag"><i data-lucide="server"></i> Node.js</div>
+                                        <div class="skill-tag"><i data-lucide="terminal"></i> Express</div>
+                                        <div class="skill-tag"><i data-lucide="database"></i> PostgreSQL</div>
+                                        <div class="skill-tag"><i data-lucide="database-backup"></i> MongoDB</div>
+                                    </div>
+                                </div>
+
+                                <!-- Skill Category 3 -->
+                                <div class="skill-category">
+                                    <h4>Alat & Lainnya</h4>
+                                    <div class="skills-list">
+                                        <div class="skill-tag"><i data-lucide="git-branch"></i> Git & GitHub</div>
+                                        <div class="skill-tag"><i data-lucide="figma"></i> Figma</div>
+                                        <div class="skill-tag"><i data-lucide="cpu"></i> RESTful API</div>
+                                        <div class="skill-tag"><i data-lucide="boxes"></i> VS Code</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-content">
+                <p class="copyright">&copy; 2026 Nama Anda. Hak Cipta Dilindungi.</p>
+                <div class="footer-links">
+                    <a href="../index.html">Beranda</a>
+                    <a href="about.html">Tentang</a>
+                    <a href="projects.html">Proyek</a>
+                    <a href="contact.html">Kontak</a>
+                </div>
+                <!-- Back to top button -->
+                <button id="back-to-top" class="back-to-top" aria-label="Kembali ke atas">
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* ==========================================================================
+   HOME PAGE (index.html) — HERO SECTION STYLES
+   ========================================================================== */
+
+/* Hero Section */
+.hero-section {
+    padding-top: calc(var(--header-height) + 4rem);
+    padding-bottom: 6rem;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background-color: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-1);
+    margin-bottom: 1.5rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    max-width: 550px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.hero-socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.social-icon:hover {
+    color: var(--text-primary);
+    border-color: var(--accent-2);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px var(--glow-color-2);
+}
+
+.social-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Hero Visual / Profile Placeholder */
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.abstract-shape {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2), var(--accent-3));
+    opacity: 0.15;
+    z-index: 1;
+    filter: blur(20px);
+}
+
+.profile-placeholder {
+    position: absolute;
+    inset: 4px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: calc(var(--border-radius-lg) - 4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.profile-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: -50%;
+    background: conic-gradient(from 180deg at 50% 50%, var(--accent-1), var(--accent-2), var(--accent-3), var(--accent-1));
+    animation: rotate 6s linear infinite;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.profile-placeholder::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: var(--bg-card);
+    border-radius: calc(var(--border-radius-lg) - 6px);
+    z-index: -1;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.placeholder-icon {
+    width: 64px;
+    height: 64px;
+    color: var(--text-muted);
+}
+
+.profile-placeholder span {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* ==========================================================================
+   HERO RESPONSIVE
+   ========================================================================== */
+@media (max-width: 992px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin: 0 auto 2.5rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-socials {
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .image-wrapper {
+        width: 260px;
+        height: 260px;
+    }
+}
