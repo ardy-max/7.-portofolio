@@ -1,5 +1,3 @@
-# Folder Gambar / Images
-
 Taruh foto profil kamu di sini dengan nama file:
 
 - `profile.jpg` → foto profil utama (dipakai di halaman Beranda & Tentang)
